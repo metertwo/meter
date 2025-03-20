@@ -81,6 +81,23 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const password2 = document.getElementById('password_confirm').value;
+            
+            if (password !== password2) {
+                alert('Şifreler eşleşmiyor!');
+                return;
+            }
+            
+            console.log('Kayıt isteği:', { username, email });
+            window.location.href = 'index.html';
+        });
+    </script>
 </body>
 </html> 

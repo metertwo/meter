@@ -12,7 +12,10 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="images/logo-orange.png" alt="MeterTwo Logo" style="height: 40px;"></a>
+            <a href="index.html">
+                <img src="images/logo-orange.png" alt="MeterTwo Logo" style="height: 40px;">
+                <span class="dev-badge">DEV</span>
+            </a>
         </div>
         
         <ul class="main-menu">
@@ -148,20 +151,11 @@
     </div>
 
     <div class="cookie-notice">
-        <div class="cookie-content">
-            <i class="fas fa-cookie-bite cookie-icon"></i>
-            <p class="cookie-text">
-                Bu web sitesi, size en iyi deneyimi sunmak için çerezleri kullanmaktadır. 
-                <a href="gizlilik.html">Gizlilik Politikamızı</a> inceleyebilirsiniz.
-            </p>
-            <div class="cookie-buttons">
-                <button class="cookie-btn accept" onclick="acceptCookies()">
-                    <i class="fas fa-check"></i> Kabul Et
-                </button>
-                <button class="cookie-btn reject" onclick="rejectCookies()">
-                    <i class="fas fa-times"></i> Reddet
-                </button>
-            </div>
+        <h3>Çerezleri kullanıyoruz</h3>
+        <p>Web sitemizde gezinme deneyiminizi geliştirmek, size kişiselleştirilmiş içerik ve hedefli reklamlar göstermek, trafiğimizi analiz etmek ve ziyaretçilerimizin nereden geldiğini anlamak için çerezleri ve diğer izleme teknolojilerini kullanıyoruz.</p>
+        <div class="cookie-buttons">
+            <button class="accept">Kabul et</button>
+            <button class="settings">Tercihleri değiştir</button>
         </div>
     </div>
 
@@ -188,30 +182,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        // Çerez kontrolü
-        function checkCookies() {
-            if (!localStorage.getItem('cookiesAccepted')) {
-                setTimeout(() => {
-                    document.querySelector('.cookie-notice').classList.add('show');
-                }, 2000);
-            }
-        }
-
-        // Çerezleri kabul et
-        function acceptCookies() {
-            localStorage.setItem('cookiesAccepted', 'true');
-            document.querySelector('.cookie-notice').classList.remove('show');
-        }
-
-        // Çerezleri reddet
-        function rejectCookies() {
-            localStorage.setItem('cookiesAccepted', 'false');
-            document.querySelector('.cookie-notice').classList.remove('show');
-        }
-
-        // Sayfa yüklendiğinde çerez kontrolü yap
-        window.addEventListener('load', checkCookies);
-    </script>
 </body>
 </html> 

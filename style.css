@@ -49,6 +49,18 @@ header {
     position: relative;
 }
 
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .logo img {
     height: 50px;
     width: auto;
@@ -59,6 +71,20 @@ header {
 .logo img:hover {
     transform: scale(1.05);
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.8));
+}
+
+.dev-badge {
+    background: var(--primary-orange);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: -8px;
+    right: -20px;
+    font-family: 'Fredoka One', cursive;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .main-menu {
@@ -1156,4 +1182,101 @@ footer {
         flex: 1;
         max-width: 150px;
     }
+}
+
+/* Kayıt Formu Stilleri */
+.auth-form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 165, 0, 0.2);
+}
+
+.auth-form .form-group {
+    margin-bottom: 25px;
+}
+
+.auth-form label {
+    display: block;
+    color: var(--primary-orange);
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.auth-form label i {
+    margin-right: 8px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 165, 0, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.auth-form input:focus {
+    border-color: var(--primary-orange);
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+}
+
+.auth-form .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.auth-form .checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.auth-form .checkbox-group label {
+    margin: 0;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.auth-form .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, var(--primary-orange), var(--dark-orange));
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-form .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 165, 0, 0.3);
+}
+
+.auth-form .form-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.auth-form .form-links a {
+    color: var(--primary-orange);
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+.auth-form .form-links a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px var(--primary-orange);
 } 
