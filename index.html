@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
@@ -11,89 +12,156 @@
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="MeterTwo Logo">
+            <a href="index.html"><img src="images/logo-orange.png" alt="MeterTwo Logo" style="height: 40px;"></a>
         </div>
         
         <ul class="main-menu">
-            <li><a href="/anasayfa"><i class="fas fa-home"></i> Anasayfa</a></li>
-            <li><a href="/magaza"><i class="fas fa-store"></i> Mağaza</a></li>
-            <li><a href="/kredi-yukle"><i class="fas fa-coins"></i> Kredi Yükle</a></li>
-            <li><a href="/kredi-gonder"><i class="fas fa-paper-plane"></i> Kredi Gönder</a></li>
-            <li><a href="/destek"><i class="fas fa-headset"></i> Destek</a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i> Anasayfa</a></li>
+            <li><a href="magaza.html"><i class="fas fa-store"></i> Mağaza</a></li>
+            <li><a href="kredi-yukle.html"><i class="fas fa-coins"></i> Kredi Yükle</a></li>
+            <li><a href="kredi-gonder.html"><i class="fas fa-paper-plane"></i> Kredi Gönder</a></li>
+            <li><a href="destek.html"><i class="fas fa-headset"></i> Destek</a></li>
         </ul>
-    </header>
 
-    <div class="auth-buttons">
-        <a href="/giris" class="login-btn">Giriş Yap</a>
-        <a href="/kayit" class="register-btn">Kayıt Ol</a>
-    </div>
+        <div class="auth-buttons">
+            <a href="giris.html" class="login-btn">Giriş Yap</a>
+            <a href="kayit.html" class="register-btn">Kayıt Ol</a>
+        </div>
+    </header>
 
     <div class="hero">
         <div class="hero-content">
             <div class="site-logo">
-                <img src="images/big-logo.png" alt="MeterTwo Logo Büyük">
+                <img src="images/logo-orange.png" alt="MeterTwo Logo Büyük" style="height: 120px;">
             </div>
             
             <div class="stats-container">
-                <div class="game-stat">
-                    <i class="fas fa-gamepad"></i>
-                    <div class="stat-info">
-                        <div class="count">122 OYUNCU AKTİF</div>
-                        <div class="server">METERTWO.COM</div>
-                    </div>
-                </div>
-                
                 <div class="discord-stat">
                     <i class="fab fa-discord"></i>
                     <div class="stat-info">
-                        <div class="count">100 AKTİF</div>
-                        <div class="server">DISCORD.GG/METERTWO</div>
+                        <div class="count">63 AKTİF</div>
+                        <div class="server">DISCORD.GG/2hqK83Wwn9</div>
                     </div>
                 </div>
             </div>
             
             <div class="welcome-section">
                 <h1>MeterTwo</h1>
-                <p>Topluluğumuza katılmak için lütfen giriş yapın veya kaydolun.</p>
-                
-                <div class="auth-main-buttons">
-                    <a href="/giris" class="login-main">Giriş Yap</a>
-                    <a href="/kayit" class="register-main">Kayıt Ol</a>
-                </div>
+                <p>Topluluğumuza katılmak için lütfen <a href="giris.html" class="auth-link">giriş yapın</a> veya <a href="kayit.html" class="auth-link">kayıt olun</a>.</p>
             </div>
         </div>
     </div>
 
+    <!-- Yeni Market Bölümü -->
     <div class="shop-section">
-        <h2>MAĞAZA</h2>
-        <p>Alışverişe Başla!</p>
-        <i class="fas fa-shopping-cart"></i>
-    </div>
-
-    <div class="minecraft-scene">
-        <img src="images/minecraft-scene.jpg" alt="Minecraft Görünüm">
-        <div class="scene-text">
-            <h2>MUTLU YILLAR METERTWO!</h2>
-            <p>Yeni yılın sana ve sevdiklerine bol bol mutluluk ve huzur getirmesi dileğiyle...</p>
+        <h2><i class="fas fa-store"></i> VIP PAKETLER</h2>
+        <div class="shop-categories">
+            <div class="shop-category vip">
+                <div class="package-badge">VIP</div>
+                <i class="fas fa-star"></i>
+                <h3>VIP</h3>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> Özel isim rengi</li>
+                    <li><i class="fas fa-check"></i> /fly komutu</li>
+                    <li><i class="fas fa-check"></i> Günlük 500 kredi</li>
+                    <li><i class="fas fa-check"></i> VIP sohbet erişimi</li>
+                </ul>
+                <div class="package-price">
+                    <span class="amount">50</span>
+                    <span class="currency">TL</span>
+                </div>
+                <a href="magaza.html" class="buy-btn">SATIN AL</a>
+            </div>
+            <div class="shop-category vip-plus">
+                <div class="package-badge">VIP+</div>
+                <i class="fas fa-star-half-alt"></i>
+                <h3>VIP+</h3>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> VIP özellikleri</li>
+                    <li><i class="fas fa-check"></i> /heal komutu</li>
+                    <li><i class="fas fa-check"></i> Günlük 1000 kredi</li>
+                    <li><i class="fas fa-check"></i> Özel particle efektleri</li>
+                    <li><i class="fas fa-check"></i> 2x XP boost</li>
+                </ul>
+                <div class="package-price">
+                    <span class="amount">100</span>
+                    <span class="currency">TL</span>
+                </div>
+                <a href="magaza.html" class="buy-btn">SATIN AL</a>
+            </div>
+            <div class="shop-category mvip">
+                <div class="package-badge">MVIP</div>
+                <i class="fas fa-crown"></i>
+                <h3>MVIP</h3>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> VIP+ özellikleri</li>
+                    <li><i class="fas fa-check"></i> /god komutu</li>
+                    <li><i class="fas fa-check"></i> Günlük 2000 kredi</li>
+                    <li><i class="fas fa-check"></i> Özel eşya setleri</li>
+                    <li><i class="fas fa-check"></i> 3x XP boost</li>
+                    <li><i class="fas fa-check"></i> Özel skin ve kaplar</li>
+                </ul>
+                <div class="package-price">
+                    <span class="amount">200</span>
+                    <span class="currency">TL</span>
+                </div>
+                <a href="magaza.html" class="buy-btn">SATIN AL</a>
+            </div>
+            <div class="shop-category mvip-plus">
+                <div class="package-badge">MVIP+</div>
+                <i class="fas fa-crown"></i>
+                <h3>MVIP+</h3>
+                <ul class="package-features">
+                    <li><i class="fas fa-check"></i> MVIP özellikleri</li>
+                    <li><i class="fas fa-check"></i> Sınırsız komut erişimi</li>
+                    <li><i class="fas fa-check"></i> Günlük 5000 kredi</li>
+                    <li><i class="fas fa-check"></i> Özel sunucu yetkileri</li>
+                    <li><i class="fas fa-check"></i> 5x XP boost</li>
+                    <li><i class="fas fa-check"></i> Özel etkinlikler</li>
+                    <li><i class="fas fa-check"></i> VIP Discord rolü</li>
+                </ul>
+                <div class="package-price">
+                    <span class="amount">400</span>
+                    <span class="currency">TL</span>
+                </div>
+                <a href="magaza.html" class="buy-btn">SATIN AL</a>
+            </div>
         </div>
     </div>
 
-    <div class="discord-section">
-        <div class="discord-header">
-            <i class="fab fa-discord"></i> Discord
-            <span class="online-count">100 Members Online</span>
+    <div class="features-section">
+        <div class="feature">
+            <i class="fas fa-server"></i>
+            <h3>Güçlü Sunucular</h3>
+            <p>Lag olmadan kesintisiz oyun deneyimi</p>
         </div>
-        <div class="discord-join">
-            <a href="https://discord.gg/2hqK83Wwn9" target="_blank" class="discord-join-btn">DİSCORD'A KATIL</a>
+        <div class="feature">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Güvenli Alışveriş</h3>
+            <p>SSL korumalı güvenli ödeme sistemi</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-headset"></i>
+            <h3>7/24 Destek</h3>
+            <p>Her zaman yanınızdayız</p>
         </div>
     </div>
 
     <div class="cookie-notice">
-        <h3>Çerezleri kullanıyoruz</h3>
-        <p>Web sitemizde gezinme deneyiminizi geliştirmek, size kişiselleştirilmiş içerik ve hedefli reklamlar göstermek, trafiğimizi analiz etmek ve ziyaretçilerimizin nereden geldiğini anlamak için çerezleri ve diğer izleme teknolojilerini kullanıyoruz.</p>
-        <div class="cookie-buttons">
-            <button class="accept">Kabul et</button>
-            <button class="settings">Tercihleri değiştir</button>
+        <div class="cookie-content">
+            <i class="fas fa-cookie-bite cookie-icon"></i>
+            <p class="cookie-text">
+                Bu web sitesi, size en iyi deneyimi sunmak için çerezleri kullanmaktadır. 
+                <a href="gizlilik.html">Gizlilik Politikamızı</a> inceleyebilirsiniz.
+            </p>
+            <div class="cookie-buttons">
+                <button class="cookie-btn accept" onclick="acceptCookies()">
+                    <i class="fas fa-check"></i> Kabul Et
+                </button>
+                <button class="cookie-btn reject" onclick="rejectCookies()">
+                    <i class="fas fa-times"></i> Reddet
+                </button>
+            </div>
         </div>
     </div>
 
@@ -101,23 +169,49 @@
 
     <footer>
         <div class="footer-logo">
-            <img src="images/logo.png" alt="MeterTwo Footer Logo">
+            <a href="index.html"><img src="images/logo-orange.png" alt="MeterTwo Logo" style="height: 40px;"></a>
         </div>
         <ul class="footer-links">
-            <li><a href="/hakkimizda">Hakkımızda</a></li>
-            <li><a href="/kurallar">Kurallar</a></li>
-            <li><a href="/gizlilik-politikasi">Gizlilik Politikası</a></li>
-            <li><a href="/iletisim">İletişim</a></li>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="magaza.html">Mağaza</a></li>
+            <li><a href="kredi-yukle.html">Kredi Yükle</a></li>
+            <li><a href="kredi-gonder.html">Kredi Gönder</a></li>
+            <li><a href="destek.html">Destek</a></li>
         </ul>
         <div class="social-media">
             <a href="https://discord.gg/2hqK83Wwn9" target="_blank"><i class="fab fa-discord"></i></a>
             <a href="https://www.youtube.com/@KAFADAGIT" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
         <div class="copyright">
-            <p>&copy; 2023 MeterTwo. Tüm hakları saklıdır.</p>
+            <p>&copy; 2024 MeterTwo. Tüm hakları saklıdır.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Çerez kontrolü
+        function checkCookies() {
+            if (!localStorage.getItem('cookiesAccepted')) {
+                setTimeout(() => {
+                    document.querySelector('.cookie-notice').classList.add('show');
+                }, 2000);
+            }
+        }
+
+        // Çerezleri kabul et
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.querySelector('.cookie-notice').classList.remove('show');
+        }
+
+        // Çerezleri reddet
+        function rejectCookies() {
+            localStorage.setItem('cookiesAccepted', 'false');
+            document.querySelector('.cookie-notice').classList.remove('show');
+        }
+
+        // Sayfa yüklendiğinde çerez kontrolü yap
+        window.addEventListener('load', checkCookies);
+    </script>
 </body>
 </html> 

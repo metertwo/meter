@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destek - MeterTwo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo-orange.png" alt="MeterTwo Logo" style="height: 40px;"></a>
+        </div>
+        
+        <ul class="main-menu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Anasayfa</a></li>
+            <li><a href="magaza.html"><i class="fas fa-store"></i> Mağaza</a></li>
+            <li><a href="kredi-yukle.html"><i class="fas fa-coins"></i> Kredi Yükle</a></li>
+            <li><a href="kredi-gonder.html"><i class="fas fa-paper-plane"></i> Kredi Gönder</a></li>
+            <li><a href="destek.html"><i class="fas fa-headset"></i> Destek</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="giris.html" class="login-btn">Giriş Yap</a>
+            <a href="kayit.html" class="register-btn">Kayıt Ol</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="support-container">
+            <h1>Destek Merkezi</h1>
+            
+            <div class="support-grid">
+                <!-- SSS Bölümü -->
+                <div class="support-section faq-section">
+                    <h2><i class="fas fa-question-circle"></i> Sıkça Sorulan Sorular</h2>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h3>Kredi nasıl yükleyebilirim?</h3>
+                            <p>Kredi yüklemek için hesabınıza giriş yapın ve "Kredi Yükle" sayfasından ödeme yöntemini seçerek işlemi tamamlayın.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Kredi gönderimi nasıl yapılır?</h3>
+                            <p>Kredi göndermek için "Kredi Gönder" sayfasından alıcının kullanıcı adını ve göndermek istediğiniz miktarı girin.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Şifremi unuttum ne yapmalıyım?</h3>
+                            <p>"Şifremi Unuttum" sayfasından e-posta adresinizi girerek şifre sıfırlama bağlantısı alabilirsiniz.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- İletişim Formu -->
+                <div class="support-section contact-section">
+                    <h2><i class="fas fa-envelope"></i> Bize Ulaşın</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Adınız</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Konu</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Seçiniz</option>
+                                <option value="teknik">Teknik Sorun</option>
+                                <option value="odeme">Ödeme Sorunu</option>
+                                <option value="hesap">Hesap Sorunu</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Gönder</button>
+                    </form>
+                </div>
+
+                <!-- İletişim Bilgileri -->
+                <div class="support-section contact-info">
+                    <h2><i class="fas fa-info-circle"></i> İletişim Bilgileri</h2>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <i class="fab fa-discord"></i>
+                            <p>Discord: <a href="https://discord.gg/2hqK83Wwn9" target="_blank">MeterTwo Discord</a></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fab fa-youtube"></i>
+                            <p>YouTube: <a href="https://www.youtube.com/@KAFADAGIT" target="_blank">KAFADAGIT</a></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Destek Saatleri: 7/24</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html">MeterTwo</a>
+        </div>
+        <ul class="footer-links">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="magaza.html">Mağaza</a></li>
+            <li><a href="kredi-yukle.html">Kredi Yükle</a></li>
+            <li><a href="kredi-gonder.html">Kredi Gönder</a></li>
+            <li><a href="destek.html">Destek</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://discord.gg/2hqK83Wwn9" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.youtube.com/@KAFADAGIT" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 MeterTwo. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

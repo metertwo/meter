@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kredi Gönder - MeterTwo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="giris.html"><img src="images/logo-orange.png" alt="MeterTwo Logo" style="height: 40px;"></a>
+        </div>
+        
+        <ul class="main-menu">
+            <li><a href="index.html"><i class="fas fa-home"></i> Anasayfa</a></li>
+            <li><a href="magaza.html"><i class="fas fa-store"></i> Mağaza</a></li>
+            <li><a href="kredi-yukle.html"><i class="fas fa-coins"></i> Kredi Yükle</a></li>
+            <li><a href="kredi-gonder.html"><i class="fas fa-paper-plane"></i> Kredi Gönder</a></li>
+            <li><a href="destek.html"><i class="fas fa-headset"></i> Destek</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="giris.html" class="login-btn">Giriş Yap</a>
+            <a href="kayit.html" class="register-btn">Kayıt Ol</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="send-credit-container">
+            <h1>Kredi Gönder</h1>
+            <div class="send-credit-box">
+                <form class="send-credit-form">
+                    <div class="form-group">
+                        <label for="receiver"><i class="fas fa-user"></i> Alıcı Kullanıcı Adı</label>
+                        <input type="text" id="receiver" name="receiver" placeholder="Alıcının kullanıcı adını girin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount"><i class="fas fa-coins"></i> Kredi Miktarı</label>
+                        <input type="number" id="amount" name="amount" min="1" placeholder="Göndermek istediğiniz kredi miktarı" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> Mesaj (İsteğe bağlı)</label>
+                        <textarea id="message" name="message" placeholder="Alıcıya iletmek istediğiniz mesaj"></textarea>
+                    </div>
+                    <div class="credit-info">
+                        <p>Mevcut Krediniz: <span class="current-credit">1000</span></p>
+                        <p>İşlem Ücreti: <span class="fee">0</span></p>
+                        <p>Gönderilecek Kredi: <span class="total-amount">0</span></p>
+                    </div>
+                    <button type="submit" class="send-button">Kredi Gönder</button>
+                </form>
+            </div>
+            <div class="transfer-history">
+                <h2>Son İşlemler</h2>
+                <div class="history-list">
+                    <div class="history-item">
+                        <i class="fas fa-paper-plane"></i>
+                        <div class="history-details">
+                            <p class="user">kullanici1</p>
+                            <p class="amount">100 Kredi</p>
+                            <p class="date">01.01.2024</p>
+                        </div>
+                    </div>
+                    <div class="history-item">
+                        <i class="fas fa-paper-plane"></i>
+                        <div class="history-details">
+                            <p class="user">kullanici2</p>
+                            <p class="amount">50 Kredi</p>
+                            <p class="date">02.01.2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <a href="giris.html"><img src="images/logo-orange.png" alt="MeterTwo Logo" style="height: 40px;"></a>
+        </div>
+        <ul class="footer-links">
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="magaza.html">Mağaza</a></li>
+            <li><a href="kredi-yukle.html">Kredi Yükle</a></li>
+            <li><a href="kredi-gonder.html">Kredi Gönder</a></li>
+            <li><a href="destek.html">Destek</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://discord.gg/2hqK83Wwn9" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.youtube.com/@KAFADAGIT" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 MeterTwo. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
