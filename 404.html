@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayfa Bulunamadı - MeterTwo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <style>
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            padding: 30px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            margin: 40px auto;
+            max-width: 800px;
+            border: 5px solid var(--cookie-brown);
+        }
+        
+        .error-code {
+            font-size: 120px;
+            font-family: 'Fredoka One', cursive;
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .error-message {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: var(--cookie-crumb);
+        }
+        
+        .error-image {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 30px;
+            animation: float 3s ease-in-out infinite;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+        }
+        
+        .back-home {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-orange);
+            color: #fff;
+            font-family: 'Fredoka One', cursive;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+        
+        .back-home:hover {
+            background-color: var(--dark-orange);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="MeterTwo Logo">
+        </div>
+        
+        <ul class="main-menu">
+            <li><a href="/anasayfa"><i class="fas fa-home"></i> Anasayfa</a></li>
+            <li><a href="/magaza"><i class="fas fa-store"></i> Mağaza</a></li>
+            <li><a href="/kredi-yukle"><i class="fas fa-coins"></i> Kredi Yükle</a></li>
+            <li><a href="/kredi-gonder"><i class="fas fa-paper-plane"></i> Kredi Gönder</a></li>
+            <li><a href="/destek"><i class="fas fa-headset"></i> Destek</a></li>
+        </ul>
+    </header>
+
+    <div class="auth-buttons">
+        <a href="/giris" class="login-btn">Giriş Yap</a>
+        <a href="/kayit" class="register-btn">Kayıt Ol</a>
+    </div>
+
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <div class="error-message">Aradığınız sayfa bulunamadı!</div>
+        <img src="images/sad-cookie.png" alt="Üzgün Kurabiye" class="error-image">
+        <p>Aradığınız sayfa taşınmış, kaldırılmış veya geçici olarak kullanım dışı olabilir.</p>
+        <a href="/anasayfa" class="back-home">ANA SAYFAYA DÖN</a>
+    </div>
+
+    <div class="cookie-character" id="cookieCharacter"></div>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="MeterTwo Footer Logo">
+        </div>
+        <ul class="footer-links">
+            <li><a href="/hakkimizda">Hakkımızda</a></li>
+            <li><a href="/kurallar">Kurallar</a></li>
+            <li><a href="/gizlilik-politikasi">Gizlilik Politikası</a></li>
+            <li><a href="/iletisim">İletişim</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://discord.gg/2hqK83Wwn9" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.youtube.com/@KAFADAGIT" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 MeterTwo. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
